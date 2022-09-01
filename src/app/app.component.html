@@ -1,0 +1,44 @@
+<router-outlet></router-outlet> 
+<!-- <app-login></app-login> -->
+
+<div class="container">
+    <div class="box">    
+        <hr>
+        <h2 style="color: #FF4B2B">Calcular Edades</h2>
+
+        <div>
+            <label>Ingrese una Edad : </label>
+            <input type="number" [(ngModel)]="edadUno" placeholder="Ingrese una edad">
+        </div>
+
+        <div>
+            <label>Ingrese otra Edad : </label>
+            <input type="number" [(ngModel)]="EdadDos" placeholder="Ingrese segunda una edad">
+        </div>
+
+         <hr>
+        <h3 style="color: #FF4B2B">Resultados</h3>
+        <div>            
+            <label>Promedio : </label>
+            <input type="number" [(ngModel)]="promedio" placeholder="Promedio" disabled>            
+        </div>
+
+        <div>
+            <label>Suma : </label><input type="number" [(ngModel)]="suma" placeholder="Suma" disabled>
+        </div>
+    
+        <hr>
+
+      <div>
+        <button (click)="this.calcular()">
+            Calcular
+        </button>
+        <button (click)="this.limpiar()" style="margin-top: 10px">
+            Limpiar
+        </button>  
+      </div>
+
+
+       
+    </div>
+</div>
